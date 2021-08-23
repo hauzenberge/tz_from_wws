@@ -2,7 +2,9 @@
 
 namespace App\Admin\Controllers;
 
-use App\BlogHeaderSubMenu;
+use App\Models\Menu\BlogHeaderSubMenu;
+use App\Models\Menu\BlogHeaderMenu;
+
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -26,12 +28,12 @@ class HeaderSubMenu extends AdminController
     {
         $grid = new Grid(new BlogHeaderSubMenu());
 
-        $grid->column('id', __('Id'));
-        $grid->column('menu_id', __('Menu id'));
+        $grid->column('id', __('Id'))->sortable();
+        $grid->column('menu_title')->display(function () {
+            return BlogHeaderMenu::find($this->menu_id)->title;
+        });
         $grid->column('title', __('Title'));
         $grid->column('href', __('Href'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
 
         return $grid;
     }
@@ -47,11 +49,11 @@ class HeaderSubMenu extends AdminController
         $show = new Show(BlogHeaderSubMenu::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('menu_id', __('Menu id'));
+        $show->menu_title()->as(function () {
+            return BlogHeaderMenu::find($this->menu_id)->title;
+        });
         $show->field('title', __('Title'));
         $show->field('href', __('Href'));
-        $show->field('created_at', __('Created at'));
-        $show->field('updated_at', __('Updated at'));
 
         return $show;
     }
@@ -65,7 +67,10 @@ class HeaderSubMenu extends AdminController
     {
         $form = new Form(new BlogHeaderSubMenu());
 
-        $form->number('menu_id', __('Menu id'));
+        $form->select('menu_id', __('Menu Title'))
+        ->options(BlogHeaderMenu::all()->pluck('title', 'id'))
+        ->rules('required');
+
         $form->text('title', __('Title'));
         $form->url('href', __('Href'));
 

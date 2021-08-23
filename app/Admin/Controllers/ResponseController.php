@@ -2,7 +2,7 @@
 
 namespace App\Admin\Controllers;
 
-use App\Responce;
+use App\Models\Blog\Responce;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;

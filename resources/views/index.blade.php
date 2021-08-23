@@ -49,12 +49,12 @@
                     @if ($header_menu_items)
                         @foreach ($header_menu_items as $header_menu_item)
                             <li>
-                                <a href="{{$header_menu_item->href}}">{{$header_menu_item->title}}</a>
+                                <a href="{{url($header_menu_item->href)}}">{{$header_menu_item->title}}</a>
                                 
-                                @if (count(App\BlogHeaderSubMenu::where('menu_id', '=', $header_menu_item->id)->get()) > 0)
+                                @if (count(App\Models\Menu\BlogHeaderSubMenu::where('menu_id', '=', $header_menu_item->id)->get()) > 0)
                                     <div class="sub-menu">
                                         <ul>
-                                            @foreach (App\BlogHeaderSubMenu::where('menu_id', '=', $header_menu_item->id)->get() as $header_sub_menu_item)
+                                            @foreach (App\Models\Menu\BlogHeaderSubMenu::where('menu_id', '=', $header_menu_item->id)->get() as $header_sub_menu_item)
                                                 @if ($header_sub_menu_item->menu_id == $header_menu_item->id)
                                                     <li><a href="{{$header_sub_menu_item->href}}">{{$header_sub_menu_item->title}}</a></li>
                                                 @else

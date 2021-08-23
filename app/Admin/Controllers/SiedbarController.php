@@ -2,7 +2,7 @@
 
 namespace App\Admin\Controllers;
 
-use App\Siedbar;
+use App\Models\Blog\Siedbar;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;

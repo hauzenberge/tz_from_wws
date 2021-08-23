@@ -2,7 +2,7 @@
 
 namespace App\Admin\Controllers;
 
-use App\CopyWrite;
+use App\Models\Info\CopyWrite;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;

@@ -2,7 +2,7 @@
 
 namespace App\Admin\Controllers;
 
-use App\BlogHeaderMenu;
+use App\Models\Menu\BlogHeaderMenu;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
