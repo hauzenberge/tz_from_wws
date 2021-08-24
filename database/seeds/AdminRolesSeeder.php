@@ -11,6 +11,6 @@ class AdminRolesSeeder extends Seeder
      */
     public function run()
     {
-        App\AdminRoles::create(['name' => 'Administrator', 'slug' => 'administrator']);
+        App\LaSeed\AdminRoles::create(['name' => 'Administrator', 'slug' => 'administrator']);
     }
 }

@@ -11,7 +11,7 @@ class ContactsSeeder extends Seeder
      */
     public function run()
     {
-        App\Contacts::create([
+        App\Models\Info\Contacts::create([
         	'name' => 'DVKS Deutsche Verkäuferschule® ', 
         	'city' => 'Mehrhooger Straße 1c', 
         	'city_link' => '#', 

@@ -25,7 +25,7 @@ class Header
 
     public static function Logo($name)
     {
-        echo ' <img src="'.asset(Logos::where('name', '=', $name)->get()[0]->src).'" alt="">';
+        echo '<img src="'.asset(Logos::where('name', '=', $name)->get()[0]->src).'" alt="">';
     }
 
     public static function BlogHeaderSubMenu($id)

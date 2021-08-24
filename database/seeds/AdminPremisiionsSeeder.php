@@ -45,7 +45,7 @@ class AdminPremisiionsSeeder extends Seeder
         	],
         ];
         foreach ($items as $item) {
-        	App\AdminPremissions::create($item);
+        	App\LaSeed\AdminPremissions::create($item);
         }
 
     }

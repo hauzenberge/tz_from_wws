@@ -11,7 +11,7 @@ class StepsSalesSeeder extends Seeder
      */
     public function run()
     {
-        App\StepsSales::create([
+        App\Models\Blog\StepsSales::create([
         	'title' => 'Beratungsgespräch', 
         	'icon' => 'icon-home_big_icon_1', 
         	'icon_title' => 'Beratungsgespräch',
@@ -19,7 +19,7 @@ class StepsSalesSeeder extends Seeder
         	'text' => 'Beratungsgespräch',
         ]);
 
-        App\StepsSales::create([
+        App\Models\Blog\StepsSales::create([
         	'title' => 'Auswahl des geeigneten', 
         	'icon' => 'icon-home_big_icon_2', 
         	'icon_title' => 'Auswahl des geeigneten',
@@ -27,7 +27,7 @@ class StepsSalesSeeder extends Seeder
         	'text' => 'Auswahl des geeigneten',
         ]);
 
-        App\StepsSales::create([
+        App\Models\Blog\StepsSales::create([
         	'title' => 'Abschluss', 
         	'icon' => 'icon-home_big_icon_3', 
         	'icon_title' => 'Abschluss',

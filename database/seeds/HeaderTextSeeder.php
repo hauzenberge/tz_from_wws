@@ -11,10 +11,11 @@ class HeaderTextSeeder extends Seeder
      */
     public function run()
     {
-        App\HeaderText::create([
+        App\Models\Info\HeaderText::create([
         	'title' => 'Vertriebsleiter-Ausbildung IHK oder CEA', 
         	'sub_title' => 'Nutzen Sie Ihre Chance', 
-        	'link' => 'mehr erfahren ',
+            'link_text' => 'mehr erfahren ',
+        	'link' => '/#',
         ]);
     }
 }

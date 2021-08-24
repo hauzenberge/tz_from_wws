@@ -11,7 +11,7 @@ class WhereAreSeeder extends Seeder
      */
     public function run()
     {
-        App\WhereAre::create([
+        App\Models\Info\WhereAre::create([
         	'img_src' => 'img/index-s2.jpg',
         	'title' => 'Wo stehen Sie?', 
         	'text' => '<p class="text">Der nächste Schritt in Ihrer Karriere ist eine Führungsposition im Vertrieb oder Sie sind

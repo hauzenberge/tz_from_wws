@@ -17,6 +17,7 @@ class CreateHeadertextTable extends Migration
             $table->bigIncrements('id');
             $table->string('title')->nullable();
             $table->string('sub_title')->nullable();
+            $table->string('link_text')->nullable();
             $table->string('link')->nullable();
             $table->timestamps();
         });

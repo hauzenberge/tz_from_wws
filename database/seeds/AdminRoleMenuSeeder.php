@@ -11,6 +11,6 @@ class AdminRoleMenuSeeder extends Seeder
      */
     public function run()
     {
-        App\AdminRoleMenu::create(['role_id' => 1, 'menu_id' => 2]);
+        App\LaSeed\AdminRoleMenu::create(['role_id' => 1, 'menu_id' => 2]);
     }
 }

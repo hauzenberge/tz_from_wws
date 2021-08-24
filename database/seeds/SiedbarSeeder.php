@@ -13,7 +13,7 @@ class SiedbarSeeder extends Seeder
     {
         
         for ($i=0; $i <= 6 ; $i++) { 
-        	App\Siedbar::create([
+        	App\Models\Blog\Siedbar::create([
         	'category' => 'Seminare', 
         	'title' => 'Lorem ipsum dolor sit amet', 
         	'icon' => 'icon-calendar', 

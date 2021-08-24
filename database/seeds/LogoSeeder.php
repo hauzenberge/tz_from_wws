@@ -11,15 +11,15 @@ class LogoSeeder extends Seeder
      */
     public function run()
     {
-        App\Logos::create([
+        App\Models\Info\Logos::create([
         	'name' => 'header', 
         	'src' => 'img/logo.jpg',
         ]);
-        App\Logos::create([
+        App\Models\Info\Logos::create([
         	'name' => 'footer', 
         	'src' => 'img/footer-1.png',
         ]);
-        App\Logos::create([
+        App\Models\Info\Logos::create([
         	'name' => 'footer', 
         	'src' => 'img/footer-2.png',
         ]);

@@ -11,25 +11,25 @@ class BlogHeaderSubMenuSeeder extends Seeder
      */
     public function run()
     {
-        App\BlogHeaderSubMenu::create([
+        App\Models\Menu\BlogHeaderSubMenu::create([
         	'menu_id' => 2,
         	'title' => 'Vertriebsleiterausbildung (IHK', 
-        	'href' => '#',
+        	'href' => '/#',
         ]);
-        App\BlogHeaderSubMenu::create([
+        App\Models\Menu\BlogHeaderSubMenu::create([
         	'menu_id' => 2,
         	'title' => 'Geprüfter Vertriebsleiter (CEA)', 
-        	'href' => '#',
+        	'href' => '/#',
         ]);
-        App\BlogHeaderSubMenu::create([
+        App\Models\Menu\BlogHeaderSubMenu::create([
         	'menu_id' => 2,
         	'title' => 'Trainer für betriebliche Weiterbildung (IHK)', 
-        	'href' => '#',
+        	'href' => '/#',
         ]);
-        App\BlogHeaderSubMenu::create([
+        App\Models\Menu\BlogHeaderSubMenu::create([
         	'menu_id' => 2,
         	'title' => 'Management- und Führungstrainer (IHK)', 
-        	'href' => '#',
+        	'href' => '/#',
         ]);
     }
 }

@@ -11,6 +11,6 @@ class AdminRoleUsersSeeder extends Seeder
      */
     public function run()
     {
-        App\AdminRoleUsers::create(['role_id' => 1, 'user_id' => 1]);
+        App\LaSeed\AdminRoleUsers::create(['role_id' => 1, 'user_id' => 1]);
     }
 }

@@ -11,7 +11,7 @@ class CopyWriteSeeder extends Seeder
      */
     public function run()
     {
-        App\CopyWrite::create([
+        App\Models\Info\CopyWrite::create([
         	'about' => '© DVKS 2019. Alle Rechte vorbehalten.',
         ]);
     }

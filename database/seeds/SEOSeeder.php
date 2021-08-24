@@ -11,7 +11,7 @@ class SEOSeeder extends Seeder
      */
     public function run()
     {
-        App\SEO::create([
+        App\Models\Info\SEO::create([
         	'title' => 'DVKS',
         ]);
     }

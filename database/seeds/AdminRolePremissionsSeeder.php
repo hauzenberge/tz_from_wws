@@ -11,6 +11,6 @@ class AdminRolePremissionsSeeder extends Seeder
      */
     public function run()
     {
-        App\AdminRolePremissions::create(['role_id' => 1, 'permission_id' =>1 ]);
+        App\LaSeed\AdminRolePremissions::create(['role_id' => 1, 'permission_id' =>1 ]);
     }
 }

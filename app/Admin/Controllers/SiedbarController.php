@@ -76,8 +76,8 @@ class SiedbarController extends AdminController
         $form->text('icon', __('Icon'));
         $form->text('text_link', __('Text link'));
         $form->url('link', __('Link'));
-        $form->textarea('text', __('Text'));
 
+        $form->ckeditor('text');
         return $form;
     }
 }

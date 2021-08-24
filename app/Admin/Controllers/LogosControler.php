@@ -28,9 +28,10 @@ class LogosControler extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
-        $grid->column('src', __('Src'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
+        $grid->column('src', __('Src'))->display(function ($src) {
+            return '<img src="'.asset($src).'" style = "background-color: black" alt="">';
+
+        });
 
         return $grid;
     }
@@ -65,6 +66,8 @@ class LogosControler extends AdminController
 
         $form->text('name', __('Name'));
         $form->url('src', __('Src'));
+
+       // $form->file('src');
 
         return $form;
     }

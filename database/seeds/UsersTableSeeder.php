@@ -12,7 +12,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        App\AdminUsers::create([
+        App\LaSeed\AdminUsers::create([
         	'username' => 'admin', 
         	'password' => bcrypt('admin'), 
         	'name' => 'Admin', 

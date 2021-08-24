@@ -11,33 +11,33 @@ class BlogHeaderMenuSeeder extends Seeder
      */
     public function run()
     {
-        App\BlogHeaderMenu::create([
+        App\Models\Menu\BlogHeaderMenu::create([
         	'title' => 'Startseite', 
-        	'href' => '#',
+        	'href' => '/#',
         ]);
-        App\BlogHeaderMenu::create([
+        App\Models\Menu\BlogHeaderMenu::create([
         	'title' => 'weiterbildungsprogramme', 
-        	'href' => '#',
+        	'href' => '/#',
         ]);
-        App\BlogHeaderMenu::create([
+        App\Models\Menu\BlogHeaderMenu::create([
             'title' => 'Seminare', 
-            'href' => '#',
+            'href' => '/#',
         ]);
-        App\BlogHeaderMenu::create([
+        App\Models\Menu\BlogHeaderMenu::create([
         	'title' => 'Über die dvks', 
-        	'href' => '#',
+        	'href' => '/#',
         ]);
-        App\BlogHeaderMenu::create([
+        App\Models\Menu\BlogHeaderMenu::create([
         	'title' => 'partner', 
-        	'href' => '#',
+        	'href' => '/#',
         ]);
-        App\BlogHeaderMenu::create([
+        App\Models\Menu\BlogHeaderMenu::create([
             'title' => 'bÜcher & medien', 
-            'href' => '#',
+            'href' => '/#',
         ]);
-        App\BlogHeaderMenu::create([
+        App\Models\Menu\BlogHeaderMenu::create([
         	'title' => 'kontakt', 
-        	'href' => '#',
+        	'href' => '/#',
         ]);
     }
 }
