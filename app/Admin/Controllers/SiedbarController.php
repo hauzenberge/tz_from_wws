@@ -29,12 +29,7 @@ class SiedbarController extends AdminController
         $grid->column('id', __('Id'));
         $grid->column('category', __('Category'));
         $grid->column('title', __('Title'));
-        $grid->column('icon', __('Icon'));
-        $grid->column('text_link', __('Text link'));
-        $grid->column('link', __('Link'));
         $grid->column('text', __('Text'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
 
         return $grid;
     }
@@ -52,12 +47,7 @@ class SiedbarController extends AdminController
         $show->field('id', __('Id'));
         $show->field('category', __('Category'));
         $show->field('title', __('Title'));
-        $show->field('icon', __('Icon'));
-        $show->field('text_link', __('Text link'));
-        $show->field('link', __('Link'));
         $show->field('text', __('Text'));
-        $show->field('created_at', __('Created at'));
-        $show->field('updated_at', __('Updated at'));
 
         return $show;
     }
@@ -73,10 +63,6 @@ class SiedbarController extends AdminController
 
         $form->text('category', __('Category'));
         $form->text('title', __('Title'));
-        $form->text('icon', __('Icon'));
-        $form->text('text_link', __('Text link'));
-        $form->url('link', __('Link'));
-
         $form->ckeditor('text');
         return $form;
     }

@@ -98,20 +98,20 @@
                             <div class="event_item">
                                 <div class="event_item-wrapper">
                                     <strong class="event_item-category">{{$siedbar->category}}</strong>
-                                    <p class="event_item-title">{{$siedbar->title}}</p>
+                                    <p class="event_item-title"><h2>{{$siedbar->title}}</h2></p>
                                     <p class="event_item-description">
-                                        {!! $siedbar->text !!}
+                                        {!! substr($siedbar->text, 0, 150)  !!}
                                     </p>
 
                                     <div class="event_item-event-data">
                                         <div class="icon-wrap">
-                                            <span class="{{$siedbar->icon}}"></span>
+                                            <span class="icon-calendar"></span>
                                         </div>
                                         <span class="text">{{$siedbar->created_at}}</span>
                                     </div>
 
                                 </div>
-                                <a href="{{$siedbar->link}}" class="btn active">{{$siedbar->text_link}}</a>
+                                <a href="{{url('/post/'.$siedbar->id)}}" class="btn active">Weiterlesen</a>
                             </div>
                         @endforeach
                     @endif

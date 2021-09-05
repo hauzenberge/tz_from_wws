@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "411d41f7e50297cfd970002598aab961",
+    "content-hash": "9ad551184458499183e95d829caf3313",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1155,6 +1155,58 @@
                 "url"
             ],
             "time": "2021-06-30T20:03:07+00:00"
+        },
+        {
+            "name": "laravel-admin-extensions/multi-language",
+            "version": "0.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/multi-language.git",
+                "reference": "945bf16f23747a4c6233837db96746e795ef5239"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/multi-language/zipball/945bf16f23747a4c6233837db96746e795ef5239",
+                "reference": "945bf16f23747a4c6233837db96746e795ef5239",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "KevinSoft\\MultiLanguage\\MultiLanguageServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "KevinSoft\\MultiLanguage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "wangxk",
+                    "email": "wangxkww@foxmail.com"
+                }
+            ],
+            "description": "适用于laravel-admin的多语言支持扩展",
+            "homepage": "https://github.com/laravel-admin-extensions/multi-language",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2020-02-29T05:25:42+00:00"
         },
         {
             "name": "laravel/framework",

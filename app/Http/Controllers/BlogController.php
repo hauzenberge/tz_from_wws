@@ -32,4 +32,11 @@ class BlogController extends Controller
     	$response->save();
     	return redirect('/');
     }
+    public function post($id)
+    {
+      // dd(Siedbar::find($id));
+        return view('blog.post',[
+            'post' => Siedbar::find($id),
+         ]);
+    }
 }

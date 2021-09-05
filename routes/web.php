@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/', 'BlogController@index');
 
 Route::any('/response', 'BlogController@response');
+
+Route::any('/post/{id}', 'BlogController@post');

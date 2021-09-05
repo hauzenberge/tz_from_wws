@@ -17,11 +17,6 @@ class CreateSiedbarTable extends Migration
             $table->bigIncrements('id');
             $table->string('category')->nullable();
             $table->string('title')->nullable();
-            $table->string('icon')->nullable();
-
-            $table->string('text_link')->nullable();
-            $table->string('link')->nullable();
-
             $table->text('text')->nullable();
             $table->timestamps();
         });
